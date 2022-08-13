@@ -1,29 +1,19 @@
+import MenuItem from "../menuitem/MenuItem";
 import "./Menu.scss";
 
 export default function Menu(props) {
-  const { menuOpen } = props;
+  const { menuOpen, onClick } = props;
 
   const menuClasses = `menu ${menuOpen ? "active" : ""}`;
 
+  const menuItems = ["intro", "portfolio", "works", "education", "contact"].map(
+    (item) => {
+      return <MenuItem item={item} onClick={onClick} />;
+    }
+  );
   return (
     <div className={menuClasses}>
-      <ul>
-        <li>
-          <a href="#intro">Home</a>
-        </li>
-        <li>
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="#works">Works</a>
-        </li>
-        <li>
-          <a href="#education">Education</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
+      <ul>{menuItems}</ul>
     </div>
   );
 }

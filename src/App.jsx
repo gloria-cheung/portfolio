@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="app">
       <Topbar onClick={openMenuHandler} menuOpen={menuOpen} />
-      <Menu menuOpen={menuOpen} />
+      <Menu onClick={openMenuHandler} menuOpen={menuOpen} />
       <div className="sections">
         <Intro />
         <Portfolio />

@@ -28,8 +28,8 @@ export default function Works() {
   ];
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
-      : setCurrentSlide(currentSlide < 2 ? currentSlide + 1 : 0);
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : data.length - 1)
+      : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
   return (
     <div className="works" id="works">

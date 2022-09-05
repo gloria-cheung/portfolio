@@ -15,7 +15,7 @@ export default function Intro() {
           <h3>Full Stack Developer</h3>
         </div>
         <a href="#portfolio">
-          <img src="assets/down.png" alt="" />
+          <img src="assets/arrow.png" alt="" />
         </a>
       </div>
     </div>

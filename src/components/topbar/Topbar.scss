@@ -38,6 +38,10 @@
           color: $mainColor;
           font-size: 15px;
           font-weight: 500;
+
+          &:hover {
+            font-weight: 600;
+          }
         }
 
         @include mobile {
@@ -77,7 +81,7 @@
   }
 
   &.active {
-    background-color: $mainColor;
+    background-color: $secondColor;
     color: white;
     .left {
       .itemContainer {

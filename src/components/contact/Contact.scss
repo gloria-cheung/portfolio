@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .contact {
-  background-color: white;
+  background-color: $fifthColor;
   display: flex;
 
   @include mobile {
@@ -11,6 +11,8 @@
   .left {
     flex: 1;
     overflow: hidden;
+    background-color: white;
+    opacity: 0.7;
 
     img {
       height: 100%;
@@ -40,6 +42,12 @@
         width: 300px;
         height: 30px;
         font-size: 14px;
+        border-radius: 8px;
+        border: 1px solid $mainColor;
+
+        &:focus {
+          outline: none;
+        }
 
         @include mobile {
           width: 200px;
@@ -48,9 +56,15 @@
       }
 
       textarea {
+        border-radius: 8px;
         width: 300px;
         height: 200px;
         font-size: 14px;
+        border: 1px solid $mainColor;
+
+        &:focus {
+          outline: none;
+        }
 
         @include mobile {
           width: 200px;
@@ -62,7 +76,7 @@
         width: 150px;
         height: 30px;
         color: white;
-        background-color: crimson;
+        background-color: $mainColor;
         border: none;
         border-radius: 10px;
         font-weight: 500;
@@ -70,6 +84,12 @@
 
         &:focus {
           outline: none;
+        }
+
+        &:hover {
+          transform: translateY(-2px);
+          transition: all 0.2s ease-in;
+          font-weight: 600;
         }
       }
 

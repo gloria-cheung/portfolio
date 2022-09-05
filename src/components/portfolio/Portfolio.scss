@@ -1,13 +1,14 @@
 @import "../../global.scss";
 
 .portfolio {
-  background-color: white;
+  background-color: $forthColor;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h1 {
     font-size: 50px;
+    color: $mainColor;
 
     @include mobile {
       font-size: 20px;

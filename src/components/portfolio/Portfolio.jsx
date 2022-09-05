@@ -3,8 +3,8 @@ import PortfolioList from "../portfolioList/PortfolioList";
 import "./Portfolio.scss";
 import {
   featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
+  reactPortfolio,
+  rubyPortfolio,
   designPortfolio,
   contentPortfolio,
 } from "../../data";
@@ -18,12 +18,12 @@ export default function Portfolio() {
       title: "Featured",
     },
     {
-      id: "web",
-      title: "Web App",
+      id: "react",
+      title: "React",
     },
     {
-      id: "mobile",
-      title: "Mobile App",
+      id: "ruby",
+      title: "Ruby",
     },
     {
       id: "design",
@@ -40,11 +40,11 @@ export default function Portfolio() {
       case "featured":
         setData(featuredPortfolio);
         break;
-      case "web":
-        setData(webPortfolio);
+      case "react":
+        setData(reactPortfolio);
         break;
       case "mobile":
-        setData(mobilePortfolio);
+        setData(rubyPortfolio);
         break;
       case "design":
         setData(designPortfolio);
@@ -56,6 +56,10 @@ export default function Portfolio() {
         setData(featuredPortfolio);
     }
   }, [selected]);
+  const clickHandler = (item) => {
+    window.location.href = item.source;
+  };
+
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
@@ -71,7 +75,8 @@ export default function Portfolio() {
       <div className="container">
         {data.map((item) => (
           <div className="item">
-            <img src={item.img} alt="" />
+            <img src={item.img} alt="" onClick={() => clickHandler(item)} />
+
             <h3>{item.title}</h3>
           </div>
         ))}

@@ -1,4 +1,4 @@
-import { Person, Mail } from "@material-ui/icons";
+import { Person, Mail, LinkedIn, GitHub } from "@material-ui/icons";
 import "./Topbar.scss";
 
 export default function Topbar(props) {
@@ -19,7 +19,17 @@ export default function Topbar(props) {
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
-            <span>gloriacheung812@gmail.com</span>
+            <a href="mailto:gloriacheung812@gmail.com">
+              gloriacheung812@gmail.com
+            </a>
+          </div>
+          <div className="itemContainer">
+            <LinkedIn className="icon" />
+            <a href="http://www.linkedin.com/in/gloria-cheung">LinkedIn</a>
+          </div>
+          <div className="itemContainer">
+            <GitHub className="icon" />
+            <a href="http://www.github.com/gloria-cheung">GitHub</a>
           </div>
         </div>
 

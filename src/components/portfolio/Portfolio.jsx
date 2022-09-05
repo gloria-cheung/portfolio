@@ -5,8 +5,7 @@ import {
   featuredPortfolio,
   reactPortfolio,
   rubyPortfolio,
-  designPortfolio,
-  contentPortfolio,
+  widgetPortfolio,
 } from "../../data";
 
 export default function Portfolio() {
@@ -26,12 +25,8 @@ export default function Portfolio() {
       title: "Ruby",
     },
     {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
+      id: "widget",
+      title: "Widget",
     },
   ];
 
@@ -43,14 +38,11 @@ export default function Portfolio() {
       case "react":
         setData(reactPortfolio);
         break;
-      case "mobile":
+      case "ruby":
         setData(rubyPortfolio);
         break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
+      case "widget":
+        setData(widgetPortfolio);
         break;
       default:
         setData(featuredPortfolio);

@@ -59,6 +59,7 @@ export default function Portfolio() {
         {list.map((item) => (
           <PortfolioList
             {...item}
+            key={item.id}
             active={selected === item.id}
             setSelected={setSelected}
           />

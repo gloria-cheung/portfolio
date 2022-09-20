@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .contact {
-  background-color: $fifthColor;
+  background-color: $mainColor;
   display: flex;
 
   @include mobile {
@@ -28,6 +28,7 @@
 
     h2 {
       font-size: 30px;
+      color: $fifthColor;
     }
 
     form {
@@ -38,6 +39,9 @@
       align-items: center;
       justify-content: space-around;
       
+      @include mobile {
+        width: 100%;
+      }
       input {
         width: 300px;
         height: 30px;
@@ -49,10 +53,6 @@
           outline: none;
         }
 
-        @include mobile {
-          width: 200px;
-          height: 20px;
-        }
       }
 
       textarea {
@@ -66,17 +66,13 @@
           outline: none;
         }
 
-        @include mobile {
-          width: 200px;
-          height: 100px;
-        }
       }
 
       button {
         width: 150px;
         height: 30px;
         color: white;
-        background-color: $mainColor;
+        background-color: $forthColor;
         border: none;
         border-radius: 10px;
         font-weight: 500;

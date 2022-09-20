@@ -1,0 +1,65 @@
+@import "../../global.scss";
+
+.about {
+  background-color: $forthColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .container {
+    padding: 0.2em;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    
+    flex-wrap: wrap;
+    color: $thirdColor;
+
+    @include mobile {
+      width: 90%;
+    }
+
+    h1 {
+      padding-bottom: 0.5em;
+      color: $fifthColor;
+      font-size: 30px;
+
+      @include mobile {
+        font-size: 22px;
+      }
+    }
+
+    .description {
+      border-top: 1px solid black;
+      padding-top: 1em;
+      line-height: 1.5em;
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+    .btn-container {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      .download-btn {
+        margin-top: 1.5em;
+        padding: 1em;
+        color: white;
+        background-color: $mainColor;
+        border-radius: 0.5em;
+        box-shadow: none;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        &:hover {
+          opacity:0.8;
+          transition: all 0.3s ease-in;
+        }
+      }
+    }
+
+  
+  }
+}

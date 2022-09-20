@@ -1,10 +1,17 @@
 $mainColor: #0d1f2d;
 $secondColor: #546a7b;
 $thirdColor: #9ea3b0;
-$forthColor: #fae1df;
+$forthColor: #253237;
 $fifthColor: #e4c3ad;
 
 $width: 768px;
+$width2: 1200px;
+
+@mixin tablet {
+  @media (max-width: #{$width2}) {
+    @content
+  }
+}
 
 @mixin mobile {
   @media (max-width: #{$width}) {

@@ -6,8 +6,9 @@ export default function Menu(props) {
 
   const menuClasses = `menu ${menuOpen ? "active" : ""}`;
 
-  const menuItems = ["intro", "portfolio", "works", "contact"].map((item) => {
-    return <MenuItem item={item} onClick={onClick} />;
+  const data = ["intro", "about", "portfolio", "works", "contact"];
+  const menuItems = data.map((item) => {
+    return <MenuItem item={item} onClick={onClick} key={data.indexOf(item)} />;
   });
   return (
     <div className={menuClasses}>

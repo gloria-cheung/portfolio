@@ -9,14 +9,14 @@ export default function Works() {
       icon: "./assets/globe.png",
       title: "E-Commerce Website",
       desc: "Easily process orders, accept payments,manage shipping and logistics, and provide customer service",
-      img: "/assets/gloriasplantsandpots_cart.PNG",
+      img: "/assets/gloriasplantsandpots_cart.png",
     },
     {
       id: "2",
       icon: "./assets/writing.png",
       title: "Scheduling Application",
       desc: "Schedule appointments on the go and keep users organized.",
-      img: "/assets/scheduler_appointments.PNG",
+      img: "/assets/scheduler_appointments.png",
     },
     {
       id: "3",

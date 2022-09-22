@@ -48,9 +48,9 @@ export default function Portfolio() {
         setData(featuredPortfolio);
     }
   }, [selected]);
-  const clickHandler = (item) => {
-    window.location.href = item.source;
-  };
+  // const clickHandler = (item) => {
+  //   window.location.href = item.source;
+  // };
 
   return (
     <div className="portfolio" id="portfolio">
@@ -67,11 +67,12 @@ export default function Portfolio() {
       </ul>
       <div className="container">
         {data.map((item) => (
-          <div className="item">
-            <img src={item.img} alt="" onClick={() => clickHandler(item)} />
-
-            <h3>{item.title}</h3>
-          </div>
+          <a href={item.source}>
+            <div className="item">
+              <img src={item.img} alt="" />
+              <h3>{item.title}</h3>
+            </div>
+          </a>
         ))}
       </div>
     </div>

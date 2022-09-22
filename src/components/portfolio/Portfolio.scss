@@ -15,7 +15,7 @@
       font-size: 30px;
     }
     @include mobile {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 
@@ -64,6 +64,11 @@
       @include tablet {
         width: 150px;
         height: 120px;
+      }
+
+      @include smallMobile {
+        width: 130px;
+        height: 100px;
       }
  
       h3 {

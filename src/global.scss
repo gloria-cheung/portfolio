@@ -4,6 +4,7 @@ $thirdColor: #9ea3b0;
 $forthColor: #253237;
 $fifthColor: #e4c3ad;
 
+$width3: 375px;
 $width: 768px;
 $width2: 1200px;
 
@@ -15,6 +16,11 @@ $width2: 1200px;
 
 @mixin mobile {
   @media (max-width: #{$width}) {
+    @content
+  }
+}
+@mixin smallMobile {
+  @media (max-width: #{$width3}) {
     @content
   }
 }

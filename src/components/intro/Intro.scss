@@ -25,6 +25,9 @@
 
       @include mobile {
         align-items: flex-start;
+        width: 780px;
+        height: 780px;
+        padding-top: 1.5em;
       }
 
       img {

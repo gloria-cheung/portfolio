@@ -21,7 +21,7 @@ export default function Works() {
     {
       id: "3",
       icon: "./assets/globe.png",
-      title: "Home Finder",
+      title: "Real Estate Marketplace",
       desc: "Search for a home to buy, rent or sell! It's never been this simple!",
       img: "/assets/homefinder_modal.png",
     },

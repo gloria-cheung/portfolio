@@ -1,9 +1,9 @@
 export const featuredPortfolio = [
   {
     id: 1,
-    title: "Scheduler",
-    img: "assets/portfolio/scheduler.png",
-    source: "https://schedulerapp-lhl.netlify.app/",
+    title: "Home Finder",
+    img: "assets/portfolio/homefinder.png",
+    source: "https://github.com/gloria-cheung/final/",
   },
   {
     id: 2,
@@ -13,22 +13,23 @@ export const featuredPortfolio = [
   },
   {
     id: 3,
+    title: "Scheduler",
+    img: "assets/portfolio/scheduler.png",
+    source: "https://schedulerapp-lhl.netlify.app/",
+  },
+  {
+    id: 4,
     title: "Food Order App",
     img: "assets/portfolio/foodorder.png",
     source: "https://reactmeals-app.herokuapp.com/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Tweeter",
     img: "assets/portfolio/tweeter.png",
     source: "https://tweeterclone-app.herokuapp.com/",
   },
-  {
-    id: 5,
-    title: "Finders Sneakers",
-    img: "assets/portfolio/finders_sneakers.png",
-    source: "https://github.com/gloria-cheung/Finders-Sneakers",
-  },
+  ,
   {
     id: 6,
     title: "Tinyapp",
@@ -40,9 +41,9 @@ export const featuredPortfolio = [
 export const reactPortfolio = [
   {
     id: 1,
-    title: "Food Order App",
-    img: "assets/portfolio/foodorder.png",
-    source: "https://reactmeals-app.herokuapp.com/",
+    title: "Home Finder",
+    img: "assets/portfolio/homefinder.png",
+    source: "https://github.com/gloria-cheung/final/",
   },
   {
     id: 2,
@@ -64,9 +65,9 @@ export const reactPortfolio = [
   },
   {
     id: 5,
-    title: "Hangman",
-    img: "assets/portfolio/hangman.png",
-    source: "https://github.com/gloria-cheung/hangman",
+    title: "Food Order App",
+    img: "assets/portfolio/foodorder.png",
+    source: "https://reactmeals-app.herokuapp.com/",
   },
   {
     id: 6,

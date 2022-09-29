@@ -21,9 +21,9 @@ export default function Works() {
     {
       id: "3",
       icon: "./assets/globe.png",
-      title: "Real Estate Marketplace",
+      title: "Home Finder",
       desc: "Search for a home to buy, rent or sell! It's never been this simple!",
-      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      img: "/assets/homefinder_modal.png",
     },
   ];
   const handleClick = (way) => {

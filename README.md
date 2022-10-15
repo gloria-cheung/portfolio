@@ -1,6 +1,6 @@
 # Welcome to my Portfolio Github!
 
-This project was created using React.
+This project was created using Create React App, Material UI, SASS and EmailJS.
 
 ## Connect With Me
 

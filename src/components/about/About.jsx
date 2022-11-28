@@ -1,3 +1,4 @@
+import { Button } from "react-bootstrap";
 import "./About.scss";
 
 export default function About() {
@@ -22,11 +23,11 @@ export default function About() {
           user interfaces that can generate maximum results.
         </p>
         <div className="btn-container">
-          <button className="download-btn">
+          <Button variant="light" className="ps-4 pe-4">
             <a href="https://resume.creddle.io/resume/imj2eatltrt">
               View Resume
             </a>
-          </button>
+          </Button>
         </div>
       </div>
     </div>

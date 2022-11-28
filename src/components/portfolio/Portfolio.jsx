@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
+import PortfolioItem from "../portfolioItem/PortfolioItem";
 import "./Portfolio.scss";
 import {
   featuredPortfolio,
@@ -48,9 +49,6 @@ export default function Portfolio() {
         setData(featuredPortfolio);
     }
   }, [selected]);
-  // const clickHandler = (item) => {
-  //   window.location.href = item.source;
-  // };
 
   return (
     <div className="portfolio" id="portfolio">
@@ -67,12 +65,7 @@ export default function Portfolio() {
       </ul>
       <div className="container">
         {data.map((item) => (
-          <a href={item.source}>
-            <div className="item">
-              <img src={item.img} alt="" />
-              <h3>{item.title}</h3>
-            </div>
-          </a>
+          <PortfolioItem key={item.id} {...item} />
         ))}
       </div>
     </div>

@@ -10,7 +10,7 @@ export default function MenuItem(props) {
   };
   return (
     <li onClick={redirectTo}>
-      <a>{title}</a>
+      <span>{title}</span>
     </li>
   );
 }

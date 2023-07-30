@@ -96,9 +96,13 @@
         }
       }
 
-      span {
-        color: green
+      span.success {
+          color: green;
+      }
+      span.error {
+          color: red;
       }
     }
+    
   }
 }

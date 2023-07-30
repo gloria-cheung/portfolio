@@ -4,7 +4,8 @@ import emailjs from "@emailjs/browser";
 import "./Contact.scss";
 
 export default function Contact() {
-  const [message, setMessage] = useState(false);
+  const [message, setMessage] = useState({ status: false, text: "" });
+  const [error, setError] = useState({ status: false, text: "" });
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -12,18 +13,23 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "service_pa3be17",
-        "template_sxq2l4l",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        "jcqaKZGY8N1jCqM4D"
+        process.env.REACT_APP_ACCESS_TOKEN
       )
       .then(
         (result) => {
-          setMessage(true);
+          setMessage({ status: true, text: "I will reply to you ASAP! :D" });
+          setError({ status: false, text: "" });
           form.current.reset();
         },
         (error) => {
-          console.log(error.text);
+          setMessage({ status: false, text: "" });
+          setError({
+            status: true,
+            text: "Sorry, your message did not send. We are currently looking into the problem and will fix this ASAP.",
+          });
         }
       );
   };
@@ -40,7 +46,11 @@ export default function Contact() {
           <input type="email" name="user_email" placeholder="Email" required />
           <textarea name="message" placeholder="Message" required />
           <button type="submit">Send</button>
-          {message && <span>Thanks, I will reply ASAP :D!</span>}
+          {error.status ? (
+            <span className="error">{error.text}</span>
+          ) : (
+            <span className="success">{message.text}</span>
+          )}
         </form>
       </div>
     </div>
